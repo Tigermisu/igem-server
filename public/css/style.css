@@ -1,0 +1,98 @@
+.navbar-brand > img {
+    max-width: 25px;
+    display: inline-block;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.margin {
+    margin: 50px;
+}
+
+.centerer {
+    min-height: calc(100vh - 51px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.centerer h2 {
+    text-align: center;
+}
+
+.menu-icon {
+    padding: 20px;
+    border-radius: 5%;
+    transition: background 0.3s;
+    margin: 40px 10px;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    background-color: #e7e7e7;
+}
+
+.menu-icon img {
+    max-width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+
+.menu-icon h3 {
+    text-align: center;
+}
+
+a.nostyleplox {
+    text-decoration: none;
+    color: #636b6f;
+}
+
+a.nostyleplox > * {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+input[type=checkbox], input[type=radio]  {
+    width: auto;
+    display: inline-block;
+    margin-top: 30px;
+    height: 15px;
+}
+
+.btn.inline {
+    margin-top: 26px;
+    height: 40px;
+}
+
+@media (max-width: 767px) {
+    input[type=checkbox], input[type=radio]  {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+        margin-top: 15px;
+    }
+
+    input[type=checkbox] + label  {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .btn.inline {
+        margin: 20px auto;
+        display: block;
+    }
+}
