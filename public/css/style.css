@@ -55,7 +55,7 @@ a.nostyleplox > * {
     color: inherit;
 }
 
-input {
+.upload input {
     width: 100%;
     max-width: 300px;
     display: block;
@@ -65,7 +65,7 @@ input {
     height: 40px;
 }
 
-input[type=checkbox], input[type=radio]  {
+.upload input[type=checkbox], input[type=radio]  {
     width: auto;
     display: inline-block;
     margin-top: 30px;
@@ -75,6 +75,33 @@ input[type=checkbox], input[type=radio]  {
 .btn.inline {
     margin-top: 26px;
     height: 40px;
+}
+
+.console {
+    border-radius: 5px;
+    border: #bcbcbc solid 1px;
+    background-color: #fff;
+    padding: 5px;
+    height: 40vh;
+    margin: 5vh 0;
+    overflow-y: auto;
+}
+
+.console p {
+    margin: 0;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.console p.good {
+    color: #27ae60;
+}
+
+.console p.bad {
+    color: #e74c3c;
+}
+
+.console p.info {
+    color: #2980b9;
 }
 
 @media (max-width: 767px) {
