@@ -18,7 +18,8 @@ class ScanController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('scans.index', ['scans' => Scan::paginate(10)]);
     }
 
     /**

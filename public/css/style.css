@@ -104,6 +104,55 @@ a.nostyleplox > * {
     color: #2980b9;
 }
 
+.scan {
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border: #bcbcbc solid 1px;
+}
+
+.scan p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.scan:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.scan:not(:first-child) {
+    border-top: none;
+}
+
+.scan-result {
+    border: #bcbcbc solid 1px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.pagination {
+    margin: 0;
+    border-radius: 0;
+    float: right;
+}
+
+.pagination a, .pagination span {    
+    border-radius: 0 !important;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #15a01f;
+    border-color: #15a01f;
+}
+
+span.tenth {
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     input[type=checkbox], input[type=radio]  {
         width: 100%;
