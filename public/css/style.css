@@ -132,6 +132,14 @@ a.nostyleplox > * {
     background-color: #fff;
 }
 
+.scan-plot {
+    width: 100%;
+}
+
+.scan-plot .svg-container {
+    margin: 0px auto !important;
+}
+
 .pagination {
     margin: 0;
     border-radius: 0;
