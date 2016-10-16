@@ -30,8 +30,7 @@
 </div>
 
 <script>
-var scanLength = 10,
-    sensors = 10;
+var scanLength = 11;
 @foreach($scans as $scan)
 var records = [],
     z_data = [];
@@ -64,7 +63,7 @@ var data{{$scan->id}} = [{
            z: z_data,
            type: 'surface'
         }];
-  
+
 Plotly.newPlot('plot{{ $scan->id }}', data{{$scan->id}}, layout{{$scan->id}});
 @endforeach
 </script>

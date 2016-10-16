@@ -52,6 +52,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
+                        <li><a href="{{ url('/scan') }}">View Scans</a></li>
                         <li><a href="{{ url('/login') }}">Login</a></li>
                     @else
                         <li><a href="{{ url('/scan') }}">View Scans</a></li>

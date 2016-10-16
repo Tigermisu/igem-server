@@ -4,7 +4,12 @@
 <div class="centerer">
     <div class="container">
         <div class="row">
+            @if(Auth::check())
             <h2>Good {{ localtime(time(), true)["tm_hour"] >= 12? localtime(time(), true)["tm_hour"] >= 17? "evening":"afternoon":"morning"}}, {{ Auth::user()->name }}! Please choose an option to begin.</h2>
+            @else
+            <h2>Good {{ localtime(time(), true)["tm_hour"] >= 12? localtime(time(), true)["tm_hour"] >= 17? "evening":"afternoon":"morning"}}, guest! Please choose an option to begin.</h2>
+            
+            @endif
             <div class="col-md-6">
                 <a href="{{ route('scan.index') }}" class="nostyleplox">
                     <div class="menu-icon">

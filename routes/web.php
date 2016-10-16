@@ -12,18 +12,26 @@
 */
 
 Route::get('/', function () {
+    /*
     if(Auth::check()) {
+    */
         return redirect('/dashboard');
+    /*
     } else {
         return view('welcome');
     }
+    */
 });
 
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
 
-Route::group(['middleware' => 'auth'], function () {    
-    Route::resource('scan', 'ScanController');
+Route::resource('scan', 'ScanController');
+
+/*
+Route::group(['middleware' => 'auth'], function () {  
+      Route::resource('scan', 'ScanController');
 });
+*/
 

@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Scan;
 use App\Record;
 use Validator;
+use Auth;
 
 class ScanController extends Controller
 {
@@ -29,7 +30,8 @@ class ScanController extends Controller
      */
     public function create()
     {
-        return view('scans.create');
+        if(Auth::check()) return view('scans.create');
+        else return redirect('login');
     }
 
     /**

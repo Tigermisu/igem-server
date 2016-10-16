@@ -71,7 +71,7 @@ var uploader = {
                         var lines = this.result.split('\n');
                         fileData = [];
                         for(var line = 0; line < lines.length; line++){
-                            if(lines[line].length > 0) fileData.push(lines[line]);
+                            if(lines[line].length > 0 && !isNaN(lines[line])) fileData.push(lines[line]);
                         }
                         $.ajax({
                             url: url,
