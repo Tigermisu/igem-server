@@ -7,6 +7,12 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
+header('Access-Control-Allow-Origin: http://igem.dev');
+header('Access-Control-Allow-Origin: http://2016.igem.org');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); // allow certain headers
+
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader

@@ -27,6 +27,8 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
 
+Route::post('/download', 'DownloadController@registerDownload');
+
 Route::resource('scan', 'ScanController');
 
 /*
